@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-color: #0f1b4c;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -19,8 +23,25 @@ a {
 
 .content {
   width: 1110px;
+  max-width: calc(100% - 48px);
   margin-left: auto;
   margin-right: auto;
+}
+
+.btn {
+  display: inline-block;
+  min-width: 98px;
+  background: var(--primary-color);
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #ffffff;
+  padding: 18px 16px;
+}
+
+.btn:hover {
+  opacity: 0.9;
 }
 
 /* Header */
@@ -32,11 +53,12 @@ a {
 .navbar {
   display: flex;
   align-items: center;
+  padding-top: 50px;
 }
 
 .navbar ul {
   display: flex;
-  column-gap: 28px;
+  margin-left: 50px;
 }
 
 .navbar .actions {
@@ -47,4 +69,20 @@ a {
   font-weight: 500;
   font-size: 1.4rem;
   color: #4f5361;
+  padding: 8px 14px;
+}
+
+.navbar ul a:hover {
+  text-decoration: underline;
+}
+
+.navbar .action-link {
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: var(--primary-color);
+}
+
+.navbar .action-btn {
+  padding: 13px 16px;
+  margin-left: 18px;
 }
