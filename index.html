@@ -95,6 +95,7 @@
     />
     <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
   </head>
   <body>
     <!-- Header -->
@@ -103,7 +104,19 @@
         <nav class="navbar">
           <!-- Logo -->
           <a href="#"><img src="./assets/img/logo.svg" alt="Besnik." /></a>
-
+          <label class="hamburger-btn" for="toggle-menu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="inherit"
+              viewBox="0 0 448 512"
+            >
+              <path
+                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+              />
+            </svg>
+          </label>
+          <input hidden type="checkbox" name="" id="toggle-menu" />
+          <label for="toggle-menu" class="overlay"></label>
           <!-- Navigation -->
           <ul>
             <li><a href="#">Home</a></li>
@@ -112,6 +125,21 @@
             <li><a href="#resources">Resources</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
+          <!-- Mobile menu -->
+          <div class="mobile-menu">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#resources">Resources</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="separate"></div>
+            <div class="actions">
+              <a href="#!" class="action-link">Sign in</a>
+              <a href="#!" class="btn action-btn">Sign up</a>
+            </div>
+          </div>
           <!-- Action -->
           <div class="actions">
             <a href="#!" class="action-link">Sign in</a>
