@@ -76,15 +76,137 @@
     margin-left: 50px;
     display: block;
   }
+  .hero-img {
+    display: none;
+  }
+  .hero-wrap .info {
+    margin: 0 auto;
+    text-align: center;
+    width: 70%;
+  }
+  .clients .images {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .guide-item {
+    margin: 0;
+    flex: 1;
+  }
+
+  .featured .list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stats .row {
+    flex-direction: column;
+  }
+
+  .stats-trend {
+    left: 40px;
+  }
+
+  .stats .info {
+    padding: 24px;
+    width: 100%;
+  }
+  .stats .sub-title,
+  .stats .info .desc {
+    width: 100%;
+  }
+
+  .stats .row.row-qty {
+    flex-direction: row;
+    margin-top: 70px;
+  }
+  .stats .qty {
+    padding: 0;
+  }
+  .subscription .image {
+    display: none;
+  }
+  .footer .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer .copyright {
+    text-align: right;
+  }
 }
 
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 991px) {
+  .navbar .mobile-menu .separate,
+  .navbar .mobile-menu .actions {
+    display: none;
+  }
 }
 
 /* Mobile */
 @media screen and (max-width: 767px) {
   .navbar .actions {
     display: none;
+  }
+  .featured .list {
+    grid-template-columns: 1fr;
+  }
+  .hero-wrap .info {
+    width: 100%;
+  }
+  .hero-wrap .title {
+    font-size: 5.2rem;
+  }
+  .clients .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 16px;
+  }
+  .clients .desc {
+    font-size: 1.2rem;
+  }
+  .guides {
+    padding: 0;
+  }
+  .list-guide {
+    flex-direction: column;
+    row-gap: 24px;
+  }
+  .featured {
+    padding: 24px 0;
+  }
+  .featured .sub-title {
+    font-size: 2.4rem;
+  }
+  .featured .link {
+    display: none;
+  }
+  .featured .desc {
+    line-height: 1.5;
+  }
+
+  .featured .list {
+    margin-top: 24px;
+  }
+  .stats .img-block,
+  .stats .info {
+    width: 100%;
+  }
+  .stats .img-block .image {
+    width: 100%;
+  }
+  .stats .row.row-qty {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 24px;
+  }
+  .stats .qty {
+    font-size: 5.2rem;
+  }
+  .footer .row {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .footer .copyright {
+    text-align: left;
   }
 }
